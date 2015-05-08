@@ -1,0 +1,488 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* 
+Theme Name: My Theme	
+Author: Christina Rome
+Author URI: http://crome.dreamhosters.com/
+Description: This is my theme for web170 class.
+Version: 1.0
+*/
+
+* {
+padding:0;
+margin:0;	
+}
+
+@font-face {
+    font-family: 'comic_reliefregular';
+    src: url('../fonts/comicrelief-webfont.eot');
+    src: url('../fonts/comicrelief-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/comicrelief-webfont.woff2') format('woff2'),
+         url('../fonts/comicrelief-webfont.woff') format('woff'),
+         url('../fonts/comicrelief-webfont.ttf') format('truetype'),
+         url('../fonts/comicrelief-webfont.svg#comic_reliefregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html {font-size: .9em;}
+
+h1 {
+	font-family:'comic_reliefregular';
+	font-size:2.074em;	
+	font-weight:200;
+	line-height:1.5;
+	padding-bottom:.5em;
+	margin-top: 0;
+}
+
+h2 {
+	font-family:'comic_reliefregular';
+	font-size:1.728em;	
+	font-weight:200;
+	line-height: 1.32em;
+	margin-top: 0.5em;
+	margin-bottom: 0.22em;
+	color:#CC0000;
+}
+
+h3 {
+	font-family:'comic_reliefregular';
+	font-size:1.44em;	
+	font-weight:200;
+	line-height: 1.1em;
+	margin-top: 0.8em;	
+}
+
+h4 {
+	font-family:'comic_reliefregular';
+	font-size:1.2em;
+	font-weight:200;	
+}
+
+p {
+	line-height: 1.6em;
+	margin-bottom:1.6em;
+}
+
+body {
+	font-family: 'comic_reliefregular', sans serif;
+	/*line-height:1.5;*/
+	/*background:#262626;*/
+	background: rgb(69,72,77); /* Old browsers */
+	background: -moz-radial-gradient(center, ellipse cover,  rgba(69,72,77,1) 0%, rgba(0,0,0,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(69,72,77,1)), color-stop(100%,rgba(0,0,0,1))); /* Chrome,Safari4+ */
+	background: -webkit-radial-gradient(center, ellipse cover,  rgba(69,72,77,1) 0%,rgba(0,0,0,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-radial-gradient(center, ellipse cover,  rgba(69,72,77,1) 0%,rgba(0,0,0,1) 100%); /* Opera 12+ */
+	background: -ms-radial-gradient(center, ellipse cover,  rgba(69,72,77,1) 0%,rgba(0,0,0,1) 100%); /* IE10+ */
+	background: radial-gradient(ellipse at center,  rgba(69,72,77,1) 0%,rgba(0,0,0,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#45484d', endColorstr='#000000',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+header {
+	width:73%;
+	margin:auto;
+	box-shadow:0px 5px 5px -3px
+	rgb(8,8,8);	
+	max-width:1200px;
+}
+
+#logo {
+	width:25%;
+	margin-left: auto;
+	margin-right:auto;
+	margin-top:5px;
+	margin-bottom:3px;
+}
+
+#logo img {
+	display:block;
+}
+
+.nav-button, .primary-nav, .home {
+	display:none;
+}
+
+nav {
+	height:2.5em;
+	line-height:2.5em;
+	border:1px solid black;
+	border-radius: 8px;
+	background:#333333;
+	background: #45484d; /* Old browsers */
+	background: -moz-linear-gradient(top,  #45484d 0%, #000000 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#45484d), color-stop(100%,#000000)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #45484d 0%,#000000 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #45484d 0%,#000000 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #45484d 0%,#000000 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #45484d 0%,#000000 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#45484d', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+}
+
+nav ul {
+	width:100%;
+	margin:auto;
+	list-style-type:none;	
+	overflow:hidden;
+	text-align:center;	
+}
+
+nav ul li {
+	display:inline;
+	width:18%;
+	float:left;	
+}/*added to simplify nav for troubleshooting*/
+
+/*nav ul li.first {
+	display:inline;
+	width:18%;
+	float:left;	
+}
+
+nav ul li.first-on {
+	display:inline;
+	width:18%;
+	float:left;	
+}
+
+nav ul li.nav1 {
+	display:inline;
+	width:18%;
+	float:left;	
+}
+
+nav ul li.nav1-on {
+	display:inline;
+	width:18%;
+	float:left;	
+}
+
+nav ul li.nav2 {
+	display:inline;
+	width:23%;
+	float:left;	
+}
+
+nav ul li.nav2-on {
+	display:inline;
+	width:23%;
+	float:left;	
+}*/
+
+nav ul li a {
+	display:block;
+	color:#FFFFF0;
+	text-decoration:none;	
+}
+
+/*nav ul li.home-on a {
+	display:block;
+	color:#CC0000;	
+}
+
+nav ul li.nav1-on a {
+	display:block;
+	color:#CC0000;	
+}
+
+nav ul li.nav2-on a {
+	display:block;
+	color:#CC0000;	
+}*/
+
+nav ul li a:hover {
+	color:	#CC0000;	
+}
+
+nav ul li ul.sub-menu {
+	display:none;
+}
+
+#wrapper {
+	width:73%;
+	margin:6px auto 0px auto;
+	max-width:1200px;	
+}
+
+#main {
+	overflow:hidden;
+	margin-bottom:0px;	
+}
+
+#mainpic {
+	width:100%;
+	margin:auto;
+	
+}
+
+#mainpic img {
+	display:block;
+}
+
+#box1 {
+	overflow:hidden;
+	margin-top:0px;	
+	background: rgb(52,54,58); /* Old browsers */
+	background: -moz-linear-gradient(top,  rgba(52,54,58,1) 0%, rgba(0,0,0,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(52,54,58,1)), color-stop(100%,rgba(0,0,0,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(52,54,58,1) 0%,rgba(0,0,0,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(52,54,58,1) 0%,rgba(0,0,0,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(52,54,58,1) 0%,rgba(0,0,0,1) 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  rgba(52,54,58,1) 0%,rgba(0,0,0,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#34363a', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+}
+
+#sectleft {
+	float:left;
+	width:27.192489%;
+	color:#FFFFF0;
+	padding:1% 2% 1% 4%;
+	
+}
+
+#sectmiddle {
+	float:left;
+	width:27.192489%;
+	margin:0px 2px 0px 2px;
+	color:#FFFFF0;	
+	padding:1% 2% 1% 4%;
+}
+
+.left {
+	float:left;
+	width:44%;
+	margin: 2% 4% 0% 0%;
+	border:1px solid white;	
+}
+
+.left img {
+	display:block;
+}
+
+#sectright {
+	float:left;
+	width:27.192489%;
+	color:#FFFFF0;
+	padding:1% 2% 0% 4%;
+}
+
+footer {
+	background:#191919;
+	clear:both;	
+	/*border-top: 1px solid #262626;*/
+
+}
+
+#copyright {
+	height:4em;
+	line-height:3em;
+	background:#191919;
+}
+
+#copyright ul {
+	text-align: center;
+}
+
+#copyright ul li {
+	display:inline;
+	padding:0 50px;
+	color:#ccc;
+}
+
+#copyright img.css{
+	border:0;
+	width:68px;
+	height:21px;
+	padding-top:6px;
+}
+
+#copyright img.html{
+	border:0;
+	width:32px;
+	height:32px;
+	padding-top:6px;
+
+}
+
+img {
+	max-width:100%;
+}
+
+.red {
+	color:#CC0000;
+}
+
+.silver {
+	color:#ccc;
+}
+
+.dkred {
+	color:#BB0000;
+}
+
+#leftside {
+	width:57.702128%;
+	overflow:hidden;
+	float:left;	
+	color:#FFFFF0;	
+	padding:1% 4% 1% 2%;
+	margin-right: 0%;
+}
+
+#leftside img {
+	width:33.531914%;
+}
+
+.imageleft {
+	float:left;
+	margin-right: 3%;
+	margin-top: 1%;
+	margin-bottom: 1%;
+}
+
+.imageright {
+	float:right;
+	margin:1% 3% 1% 1%;
+}
+
+#rightside {
+	width:32.170213%;
+	overflow:hidden;
+	float:right;
+	color:#FFFFF0;	
+	padding:1% 2% 1% 2%;
+	border-bottom: 1px solid #FFFFF0;
+	margin-bottom: 1%;
+}
+
+#rightside ul{
+
+}
+
+#rightside ul li{
+
+}
+
+#rightside img {
+	width:40%;
+}
+
+a:link {
+	text-decoration: none;
+}
+
+#pagetitle {
+	width:100%;
+	text-align: center;
+	color:#FFFFF0;
+	padding:0% 2% 1% 2%;
+	border-bottom: 1px dotted;
+	margin-bottom: 2%;
+}
+
+/* =WordPress Core -------------------------------------------------------------- */
+.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+.aligncenter,
+div.aligncenter {
+    display: block;
+    margin: 5px auto 5px auto;
+}
+
+.alignright {
+    float:right;
+    margin: 5px 0 20px 20px;
+}
+
+.alignleft {
+    float: left;
+    margin: 5px 20px 20px 0;
+}
+
+a img.alignright {
+    float: right;
+    margin: 5px 0 20px 20px;
+}
+
+a img.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+a img.alignleft {
+    float: left;
+    margin: 5px 20px 20px 0;
+}
+
+a img.aligncenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.wp-caption {
+    background: #fff;
+    border: 1px solid #f0f0f0;
+    max-width: 96%; /* Image does not overflow the content area */
+    padding: 5px 3px 10px;
+    text-align: center;
+}
+
+.wp-caption.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignleft {
+    margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignright {
+    margin: 5px 0 20px 20px;
+}
+
+.wp-caption img {
+    border: 0 none;
+    height: auto;
+    margin: 0;
+    max-width: 98.5%;
+    padding: 0;
+    width: auto;
+}
+
+.wp-caption p.wp-caption-text {
+    font-size: 11px;
+    line-height: 17px;
+    margin: 0;
+    padding: 0 4px 5px;
+}
+
+/* Text meant only for screen readers. */
+.screen-reader-text {
+	clip: rect(1px, 1px, 1px, 1px);
+	position: absolute !important;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+}
+
+.screen-reader-text:focus {
+	background-color: #f1f1f1;
+	border-radius: 3px;
+	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+	clip: auto !important;
+	color: #21759b;
+	display: block;
+	font-size: 14px;
+	font-size: 0.875rem;
+	font-weight: bold;
+	height: auto;
+	left: 5px;
+	line-height: normal;
+	padding: 15px 23px 14px;
+	text-decoration: none;
+	top: 5px;
+	width: auto;
+	z-index: 100000; /* Above WP toolbar. */
+}
