@@ -132,43 +132,7 @@ nav ul li {
 	display:inline;
 	width:18%;
 	float:left;	
-}/*added to simplify nav for troubleshooting*/
-
-/*nav ul li.first {
-	display:inline;
-	width:18%;
-	float:left;	
 }
-
-nav ul li.first-on {
-	display:inline;
-	width:18%;
-	float:left;	
-}
-
-nav ul li.nav1 {
-	display:inline;
-	width:18%;
-	float:left;	
-}
-
-nav ul li.nav1-on {
-	display:inline;
-	width:18%;
-	float:left;	
-}
-
-nav ul li.nav2 {
-	display:inline;
-	width:23%;
-	float:left;	
-}
-
-nav ul li.nav2-on {
-	display:inline;
-	width:23%;
-	float:left;	
-}*/
 
 nav ul li a {
 	display:block;
@@ -176,22 +140,11 @@ nav ul li a {
 	text-decoration:none;	
 }
 
-/*nav ul li.home-on a {
-	display:block;
-	color:#CC0000;	
-}
-
-nav ul li.nav1-on a {
-	display:block;
-	color:#CC0000;	
-}
-
-nav ul li.nav2-on a {
-	display:block;
-	color:#CC0000;	
-}*/
-
 nav ul li a:hover {
+	color:	#CC0000;	
+}
+
+nav ul li.current-menu-item a, nav ul li.current-menu-parent a {
 	color:	#CC0000;	
 }
 
