@@ -16,12 +16,12 @@ margin:0;
 
 @font-face {
     font-family: 'comic_reliefregular';
-    src: url('../fonts/comicrelief-webfont.eot');
-    src: url('../fonts/comicrelief-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/comicrelief-webfont.woff2') format('woff2'),
-         url('../fonts/comicrelief-webfont.woff') format('woff'),
-         url('../fonts/comicrelief-webfont.ttf') format('truetype'),
-         url('../fonts/comicrelief-webfont.svg#comic_reliefregular') format('svg');
+    src: url('fonts/comicrelief-webfont.eot');
+    src: url('fonts/comicrelief-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/comicrelief-webfont.woff2') format('woff2'),
+         url('fonts/comicrelief-webfont.woff') format('woff'),
+         url('fonts/comicrelief-webfont.ttf') format('truetype'),
+         url('fonts/comicrelief-webfont.svg#comic_reliefregular') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -66,7 +66,7 @@ p {
 	margin-bottom:1.6em;
 }
 
-body {
+ body {
 	font-family: 'comic_reliefregular', sans serif;
 	/*line-height:1.5;*/
 	/*background:#262626;*/
@@ -100,7 +100,7 @@ header {
 	display:block;
 }
 
-.nav-button, .primary-nav, .home {
+.nav-button, .primary-nav {
 	display:none;
 }
 
@@ -191,7 +191,7 @@ nav ul li ul.sub-menu {
 	width:27.192489%;
 	color:#FFFFF0;
 	padding:1% 2% 1% 4%;
-	
+	font-weight:bold;
 }
 
 #sectmiddle {
@@ -199,7 +199,7 @@ nav ul li ul.sub-menu {
 	width:27.192489%;
 	margin:0px 2px 0px 2px;
 	color:#FFFFF0;	
-	padding:1% 2% 1% 4%;
+	padding:1% 4% 1% 0%;
 }
 
 .left {
@@ -217,7 +217,12 @@ nav ul li ul.sub-menu {
 	float:left;
 	width:27.192489%;
 	color:#FFFFF0;
-	padding:1% 2% 0% 4%;
+	padding:1% 0% 1% 6%;
+}
+
+#sectright li {
+	list-style-type: none;
+	padding:1%;
 }
 
 footer {
@@ -272,6 +277,10 @@ img {
 
 .dkred {
 	color:#BB0000;
+}
+
+.white {
+	color:#FFFFFF;
 }
 
 #leftside {
@@ -439,3 +448,5 @@ a img.aligncenter {
 	width: auto;
 	z-index: 100000; /* Above WP toolbar. */
 }
+
+

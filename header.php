@@ -27,18 +27,11 @@
 <header>
 
 <div id="logo">
-	<img src="<?php bloginfo('template_directory'); ?>/../images/DD_main_logo_sm.png" alt="Logo">
+	<a href="/wordpress/"><img src="<?php bloginfo('template_directory'); ?>/images/DD_main_logo_sm.png" alt="Logo"></a>
 </div><!--end logo-->
 
 <!--------- begin navigation ---------->
 <?php wp_nav_menu( array( 'theme_location' => 'main-menu', 'container' => 'nav', 'container_id' => 'navigation', 'items_wrap' => '<ul>%3$s</ul>', ) ); ?>
 <!--------- end navigation ---------->
-
-<!--<nav>
-	<ul>
-		<li class="first-on"><a href="home.html">HOME</a></li>
-		<li class="nav1"><a href="main.html">MAIN</a></li>
-	</ul>
-</nav>-->
 
 </header>

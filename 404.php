@@ -13,14 +13,14 @@
         <!--------- begin content ---------->		
         <div id="leftside">
            
-                <img class="imageleft" src="<?php bloginfo('template_directory'); ?>/../images/girls_banner.jpg" alt="GG Picture"> 
+                <img class="imageleft" src="<?php bloginfo('template_directory'); ?>/images/girls_banner.jpg" alt="GG Picture"> 
                 
 				<h2><?php the_title(); ?></h2> <!--get title of page or posting --> 
 				<p>Try again!</p>
 				<?php get_search_form(); ?> <!-- get page or posting, written content -->
 				<small>404.php</small>
 				
-                <img class="imageright" src="<?php bloginfo('template_directory'); ?>/../images/purple_shirt.jpg" alt="GG Picture">            
+                <img class="imageright" src="<?php bloginfo('template_directory'); ?>/images/purple_shirt.jpg" alt="GG Picture">            
 
         </div><!--end leftside-->		
         <!--------- end content ---------->
