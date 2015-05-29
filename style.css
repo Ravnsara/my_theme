@@ -291,10 +291,56 @@ img {
 	padding:1% 4% 1% 2%;
 	margin-right: 0%;
 }
-
 #leftside img {
-	width:33.531914%;
+	border: 1px solid #FFFFFF;
+	padding:4px;
 }
+#leftside img a {
+	border: 1px solid #39275B;
+}
+
+#leftside a:hover img {
+	border: 1px solid #CC0000;
+}
+
+#leftside a {
+	color:#CC0000;
+}
+
+#leftside a:hover  {
+	color:#ccc;
+}
+
+#leftside img.featured {
+	margin-bottom:10px;;
+}
+
+#leftside img.wp-post-image {}
+
+#leftside img.attachment-thumbnail {
+	float:left;
+	margin:4px 20px 0 0; 
+}
+
+#leftside img.attachment-medium {}
+
+#leftside img.attachment-large {
+	float:left;
+	height:34%;
+	padding:4px;
+}
+
+#leftside img.attachment-full {}
+
+/*#leftside img {
+	width:33.531914%;
+}*/
+
+#leftside article.post-excerpt {
+	overflow: hidden;
+	margin-bottom: 20px;
+}
+
 
 .imageleft {
 	float:left;

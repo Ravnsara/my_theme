@@ -37,6 +37,16 @@
 			         
 		</div>
 		<!--------- end sub-navigation ---------->
+		
+		<!--------- begin quote -------->
+		<?php if (get_post_meta($post->ID, 'Quote', true)) : ?>
+		<blockquote><?php echo get_post_meta($post->ID, 'Quote', true); ?></blockquote>
+		<?php endif; ?>
+		<!--------- end quote ---------->
+		
+		<!--------- begin dynamic sidebar -------->
+		<?php dynamic_sidebar(); ?>
+		<!--------- end dynamic sidebar ---------->
 
     </div><!--end main-->      
 
