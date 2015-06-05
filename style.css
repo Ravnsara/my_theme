@@ -365,11 +365,19 @@ img {
 }
 
 #rightside ul{
-
+	padding-left:4.5%;
 }
 
 #rightside ul li{
+	
+}
 
+#rightside ul li a{
+	color:#CC0000;
+}
+
+#rightside ul li a:hover{
+	color:#ccc;
 }
 
 #rightside img {
